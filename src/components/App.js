@@ -3,7 +3,7 @@ import ShowData from './ShowData';
 
 const App = () => {
     return(
-        <div> <ShowData /> </div>
+        <div className="ui container"> <ShowData /> </div>
     );
 };
 
