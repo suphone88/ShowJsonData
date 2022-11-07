@@ -2,7 +2,9 @@ import React from 'react';
 import ShowData from './ShowData';
 
 const App = () => {
-    return <div> App </div>;
+    return(
+        <div> <ShowData /> </div>
+    );
 };
 
 export default App;
