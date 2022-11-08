@@ -1,10 +1,8 @@
 import {combineReducers} from 'redux';
-import datasReducer from './datasReducer';
+import jsonsReducer from './jsonsReducer';
 
-// const showsData = () =>{
-//     const data = JSON.parse(showsData);
-//     return data;
-// }
+//console.log('jsonReducer',jsonsReducer)
+
 export default combineReducers({
-    datas:datasReducer
+    jsonsData: jsonsReducer
 });

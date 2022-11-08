@@ -1,8 +1,8 @@
 import jsondata from '../apis/jsondata';
-import {SHOW_JSONDATA} from './types';
+import { FETCH_SHOW } from './types';
 
-export const showsData = () => async dispatch => {
+export const showJson = () => async dispatch => {
     const response = await jsondata.get('/jsondata'); 
-    
-    dispatch({ type: SHOW_JSONDATA, payload: response.data });
+    //console.log('response',response.data)    
+    dispatch({ type: FETCH_SHOW, payload: response.data });
 };

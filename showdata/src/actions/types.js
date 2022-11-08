@@ -1,1 +1,1 @@
-export const SHOW_JSONDATA = 'SHOW_JSONDATA';
+export const FETCH_SHOW = 'FETCH_SHOW';
