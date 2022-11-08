@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-name{
+    padding-top:2rem;
+}
+.head-font,.h3{
+    text-transform: uppercase;
+}
+p{
+    text-align: justify;
+}
