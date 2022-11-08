@@ -1,0 +1,1 @@
+export const SHOW_JSONDATA = 'SHOW_JSONDATA';
