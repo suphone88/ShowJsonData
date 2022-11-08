@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {showsData} from '../actions';
 
 class ShowData extends React.Component{   
 
@@ -79,8 +80,7 @@ class ShowData extends React.Component{
         });
         
         return (
-            <div className="ui container">
-                
+            <div className="ui container">                
                 <h3> PersonalInfo </h3><hr />
                 <h4>{showPersonalHeader}</h4>
                 <div>{showPersonalDetail}</div> <hr />                
@@ -100,7 +100,7 @@ class ShowData extends React.Component{
 }
 
 const mapStateToProps = state =>{
-    //console.log(state);
-    return {datas:state.datas};
+    console.log(state);
+    return {datas:Object.values(state.datas)};
 }
-export default connect(mapStateToProps)(ShowData);
+export default connect(mapStateToProps,{showsData})(ShowData);
