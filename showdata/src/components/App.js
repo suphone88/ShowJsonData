@@ -1,10 +1,9 @@
 import React from 'react';
-import ShowData from './ShowData';
-//import '../style/App.css';
+import ShowJsondata from './ShowJsondata';
 
 const App = () => {
     return(
-        <div className="ui container"> <ShowData /> </div>
+        <div className="ui container"> <ShowJsondata /> </div>
     );
 };
 
