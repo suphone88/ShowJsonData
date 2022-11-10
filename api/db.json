@@ -4,7 +4,7 @@
         "id":1,
         "personalInfo":[
            {
-              "resumeObjective":"write something"
+              "resumeObjective":"Write Something"
            },
            {
               "name":"Su Phone Myint",             
@@ -26,7 +26,7 @@
          {
             "degree":"PGDCA(Post Graduate Diploma in Computer Application)",
             "fromYear":"June 2013",
-            "toYear ":"Set 2015",
+            "toYear":"Set 2015",
             "association":"University of Yangon"
          },
          {
@@ -48,7 +48,7 @@
          },
          {
             "certificate":"Advanced Web Development Course (Web Design and PHP Web Development)",
-            "fromDate":" June 2018",
+            "fromDate":"June 2018",
             "toDate":"Nov 2018",
             "association":"ICTTI / IMCEITS"
          }
@@ -99,32 +99,32 @@
       },
       {
         "id":5,
-        "Project":[
+        "project":[
           {
-            "projectName":"www.globalfirealarm.com",
+            "projectName":"globalfirealarm.com",
             "details":"Using Customise Wordpress theme, MySql, Customise theme design,custom css"
           },
           {
-            "projectName":"www.tumawlamyine.edu.mm",
+            "projectName":"tumawlamyine.edu.mm",
             "details":"Technological University of Mawlamyine. University Structural Web System. Using Customise Wordpress theme, MySql, Customise theme design,custom css"
           },          
           {
-            "projectName":"www.fda.gov.mm",
+            "projectName":"fda.gov.mm",
             "details":"Government Food and Drug Administration Web System. Using Customise Wordpress theme, MySql, Custom css, Customise theme design"
           },
           {
-            "projectName":"www.belocean.com.mm",
+            "projectName":"belocean.com.mm",
             "details":"Belocean Ship Management Web System. Using Customise Wordpress theme, MySql, Custom css"
           },
           {
-            "projectName":"www.maex.com.mm",
+            "projectName":"maex.com.mm",
             "details":"Myanmar AGRO exchange public company limited information Web Site. Using Customise Wordpress theme, MySql, Customise theme design, custom css"
           }
         ]
       },
       {
         "id":6,
-        "Hobby":[
+        "hobby":[
           "reading","watching","travelling"
         ]
       }      
