@@ -59,7 +59,7 @@
         "workingExperience":[
            {
               "companyName":"True Money Myanmar",
-              "position":"web developer",
+              "position":"Web Developer",
               "duration":"1 year",
               "fromYear":"May 2015",
               "toYear":"May 2016",
@@ -125,7 +125,7 @@
       {
         "id":6,
         "hobby":[
-          "reading","watching","travelling"
+          "Book Reading","Watching","Travelling"
         ]
       }      
   ]  

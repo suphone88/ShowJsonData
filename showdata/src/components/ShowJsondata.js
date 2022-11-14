@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchshows } from '../actions';
 import Header2 from '../common/Header2';
-import List from '../common/List';
+import DataList from '../common/DataList';
 
 class ShowJsondata extends React.Component{     
     componentDidMount(){
@@ -21,7 +21,7 @@ class ShowJsondata extends React.Component{
             return(
                 <div>
                     <Header2 jsonsData={jsonsData}/>
-                    <List jsonsData={jsonsData}/>
+                    <DataList jsonsData={jsonsData}/>
                 </div>
             );
         }
