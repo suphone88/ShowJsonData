@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchshows } from '../actions';
-import { Col, Row, List } from 'antd';
+import { Layout, Col, Row, List } from 'antd';
 
 class DataList extends React.Component{
     componentDidMount(){
@@ -13,7 +13,7 @@ class DataList extends React.Component{
             return <div> No Data List Page!!!</div>
         }else{
             const education = jsonsData[1].education;
-            const eduDetail = education.map(edu => {
+            const eduDetail = education.map((edu)=>{
                 return(
                     <div>
                         <ul>
@@ -26,24 +26,24 @@ class DataList extends React.Component{
                 );
             });
             const certificate = jsonsData[2].certificate;
-            const showCerti = certificate.map(certi => {
+            const showCerti = certificate.map(function(certi,i) {
                 return(
                     <div>
-                        <ul>
-                            <li>{certi.certificate}</li>
-                            <li>{certi.fromDate}</li>
-                            <li>{certi.toDate}</li>
-                            <li>{certi.association}</li>
+                        <ul key={i}>
+                            <li key={i++}>{certi.certificate}</li>
+                            <li key={i++}>{certi.fromDate}</li>
+                            <li key={i++}>{certi.toDate}</li>
+                            <li key={i++}>{certi.association}</li>
                         </ul>
                     </div>
                 );
             });
             const workingExperience = jsonsData[3].workingExperience;
-            const showWorkExp = workingExperience.map(workExp => {
+            const showWorkExp = workingExperience.map((workExp)=>{
                 return(
-                    <div style={{paddingBottom:'2em'}}>
-                        <h5 style={{textTransform:'uppercase'}}>{workExp.position}</h5>
-                        <h5>{workExp.companyName}</h5>
+                    <div className='workexp'>
+                        <h4>{workExp.position}</h4>
+                        <h4>{workExp.companyName}</h4>
                         <ul>
                             <li>{workExp.duration}</li>
                             <li>{workExp.fromYear}, {workExp.toYear}</li>
@@ -53,66 +53,65 @@ class DataList extends React.Component{
                 );
             })            
             const project = jsonsData[4].project;
-            const showProj = project.map(proj => {
+            const showProj = project.map((proj) => {
                 return(
-                    <div style={{paddingBottom:'2em'}}>
-                        <h5>{proj.projectName}</h5>
+                    <div className='project'>
+                        <h4>{proj.projectName}</h4>
                         <p>{proj.details}</p>
                     </div>
                 );
             })
             const hobby = jsonsData[5].hobby;
-            const hobbies = hobby.map(hob => {
+            const hobbies = hobby.map((hob) =>{
                 return(
                     <div>
-                        {hob}
+                        <p>{hob}</p>
                     </div>
                 );
             }) 
             return(
-                <>
+            <>
+            <Layout className='layoutbody'>                
                 <Row>
-                    <Col span={8}>
-                        <div style={{paddingBottom:'2rem'}}>
-                            <h3 style={{textTransform:'uppercase',borderBottom:'3px solid #faad14',                           
-                            width:'25%'}}>Education</h3>
+                    <Col lg={2} xl={4}></Col>                
+                    <Col lg={4} xl={6} className='colsix'>
+                        <div className='bgcolsix'>
+                            <h3 className='titlefont'>Education</h3>
                             {eduDetail}
                         </div>
-                        <div style={{paddingBottom:'2rem'}}>
-                            <h3 style={{textTransform:'uppercase',borderBottom:'3px solid #faad14',                           
-                            width:'25%'}}>Certificate</h3>
+                        <div className='bgcolsix'>
+                            <h3 className='titlefont'>Certificate</h3>
                             {showCerti}
                         </div>
-                        <div>
-                            <h3 style={{textTransform:'uppercase',borderBottom:'3px solid #faad14',                           
-                            width:'15%'}}>Hobby</h3>
+                        <div className='bgcolsix'>
+                            <h3 className='hptitle'>Hobby</h3>
                             {hobbies}
                         </div>
                     </Col>
-                    <Col span={2} style={{borderLeft:'2px solid #ddd'}}></Col>
-                    <Col span={14}>
-                        <div style={{paddingBottom:'2rem'}}>
-                            <h3 style={{textTransform:'uppercase',borderBottom:'3px solid #faad14',                           
-                            width:'25.5%'}}>Work Experience</h3>
+                    <Col span={2} className='col2'></Col>
+                    
+                    <Col lg={6} xl={8} className='colsix'>
+                        <div className='mainworkexp'>
+                            <h3 className='worktitle'>WorkExperience</h3>
                             <List      
                             dataSource={showWorkExp}
-                            renderItem={item => <List.Item style={{borderBottom:'0px'}}>{item}</List.Item>}
+                            renderItem={item => <List.Item>{item}</List.Item>}
                             />
                         </div>
-                        <div>
-                        <h3 style={{textTransform:'uppercase',borderBottom:'3px solid #faad14',                           
-                            width:'11%'}}>Project</h3>
+                        <div className='mainworkexp'>
+                        <h3 className='hptitle'>Project</h3>
                             <List     
                             dataSource={showProj}
-                            renderItem={item => <List.Item style={{borderBottom:'0px'}}>{item}</List.Item>}
+                            renderItem={item => <List.Item>{item}</List.Item>}
                             />
                         </div>
                     </Col>
-                </Row>               
-                </>
+                    <Col lg={2} xl={4}></Col>
+                </Row>
+            </Layout>
+            </>
             )
         }
-        
     }
 }
 

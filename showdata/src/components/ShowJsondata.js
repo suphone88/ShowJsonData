@@ -9,7 +9,7 @@ class ShowJsondata extends React.Component{
         this.props.fetchshows();
     } 
     render(){
-        console.log("Render",this.props.jsonsData)
+        //console.log("Render",this.props.jsonsData)
         const {jsonsData} = this.props;
         if( jsonsData.length === 0 ||
             jsonsData === '' ||
