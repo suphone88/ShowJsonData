@@ -1,17 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
-}
-.bgblack{
-    /* background-color: #f0f2f5; */
+    
 }
 .layoutheader{
     margin-top:2rem;
     padding-top:2rem;
-}
-.layoutbody{    
-    padding: 0rem;
 }
 .header-name{
     padding-top:2rem;
@@ -39,29 +33,34 @@ p{
     text-align: justify;
 }
 .col24{
-    background-color: #f0f2f5;
+    /* background-color: #f0f2f5; */
+    background-color: #ddd;
     padding: 1rem;
 }
-.bgname{
+.bgper{
+    background-color: #ddd;
+}
+.bgcol{
     background-color: #fff;
-    margin-top: 0rem;
+    width: 100%;
+}
+.bgname{
+    /* background-color: red; */
+    border-left: 12px solid #faad14;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
 }
 .coliconlist{
     background-color: #fff;
     padding-right: 2rem;
-    margin-top: 0rem;
+    padding-top: 2rem;
+    width: 100%;
 }
 .iconlist{
     border-bottom:0px;
     padding:0.2rem 0rem;
     justify-content:right;
-    border-bottom:0px;
-}
-
-.name{
-    border-left:1rem solid #faad14;
-    padding-left:0.5rem;
-    text-transform:uppercase;
 }
 .ant-list-split .ant-list-item {
     border-bottom: 0px solid #f0f0f0;
@@ -73,6 +72,7 @@ p{
 .bgdivider{
     background-color: #fff;
     padding: 2rem;
+    width: 100%;
 }
 .project{
     padding-bottom:2em;
@@ -85,7 +85,11 @@ p{
     padding-right: 3rem;
 }
 .colsix{
+    background-color: #fff;    
+}
+.colsixborder{
     background-color: #fff;
+    
 }
 .bgcolsix{
     padding: 2rem;
@@ -93,4 +97,29 @@ p{
 .bgheader{
     border: 1px solid red;
     background-color: #fff;
+}
+.boxsh {
+    box-shadow: 0px 0px red, -1em 0 .4em olive;
+}
+.img{
+    width: 70px;
+}
+.mainimg{
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+.rightimg{
+    width: 60px;
+    margin-left: 5rem;
+    
+}
+.rightimgplant{
+    width: 250px;
+}
+.mainrightplant{
+    background-image: url('images/bgpen.png');
+    padding-bottom: 10px;
+}
+.alllogobg{
+    background-color: #ddd;
 }

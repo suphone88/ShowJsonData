@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchshows } from '../actions';
 import { Layout, Col, Row, List } from 'antd';
 
+
 class DataList extends React.Component{
     componentDidMount(){
         this.props.fetchshows(this.props.jsonsData);
@@ -13,10 +14,10 @@ class DataList extends React.Component{
             return <div> No Data List Page!!!</div>
         }else{
             const education = jsonsData[1].education;
-            const eduDetail = education.map((edu)=>{
+            const eduDetail = education.map((edu,e)=>{
                 return(
                     <div>
-                        <ul>
+                        <ul key={e}>
                             <li>{edu.degree}</li>
                             <li>{edu.fromYear}</li>
                             <li>{edu.toYear}</li>
@@ -26,14 +27,14 @@ class DataList extends React.Component{
                 );
             });
             const certificate = jsonsData[2].certificate;
-            const showCerti = certificate.map(function(certi,i) {
+            const showCerti = certificate.map((certi,i)=>{
                 return(
                     <div>
                         <ul key={i}>
-                            <li key={i++}>{certi.certificate}</li>
-                            <li key={i++}>{certi.fromDate}</li>
-                            <li key={i++}>{certi.toDate}</li>
-                            <li key={i++}>{certi.association}</li>
+                            <li>{certi.certificate}</li>
+                            <li>{certi.fromDate}</li>
+                            <li>{certi.toDate}</li>
+                            <li>{certi.association}</li>
                         </ul>
                     </div>
                 );
@@ -71,9 +72,16 @@ class DataList extends React.Component{
             }) 
             return(
             <>
-            <Layout className='layoutbody'>                
+            <Layout>                
                 <Row>
-                    <Col lg={2} xl={4}></Col>                
+                    <Col xl={4} className='alllogobg'>
+                        <div className='mainimg'>                            
+                            <p><img src="images/123.png" className='img' alt="microsoftlogo" /></p>
+                            <p><img src="images/excel.png" className='img' alt="excellogo" /></p>
+                            <p><img src="images/pdfimg.png" className="img" alt="pdflogo" /></p>
+                            <p><img src="images/pwimg.png" className="img" alt="powerpointlogo" /></p>
+                        </div>
+                    </Col>                
                     <Col lg={4} xl={6} className='colsix'>
                         <div className='bgcolsix'>
                             <h3 className='titlefont'>Education</h3>
@@ -106,11 +114,19 @@ class DataList extends React.Component{
                             />
                         </div>
                     </Col>
-                    <Col lg={2} xl={4}></Col>
+                    <Col xl={4} className='alllogobg'>
+                        <div className=''>
+                            <p><img src="images/bgpen.png" className="rightimg" alt="Pen" /></p>
+                        </div>
+                        <div></div>
+                        <div className='mainrightplant'>
+                        {/* <p><img src="images/00.jpg" alt="plants" /></p> */}
+                        </div>
+                    </Col>
                 </Row>
             </Layout>
             </>
-            )
+            );
         }
     }
 }
