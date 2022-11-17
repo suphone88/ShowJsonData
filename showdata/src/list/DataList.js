@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchshows } from '../actions';
 import { Layout, Col, Row, List } from 'antd';
+import DList from './DList';
 
 
 class DataList extends React.Component{
@@ -14,31 +15,7 @@ class DataList extends React.Component{
             return <div> No Data List Page!!!</div>
         }else{
             const education = jsonsData[1].education;
-            const eduDetail = education.map((edu,e)=>{
-                return(
-                    <div>
-                        <ul key={e}>
-                            <li>{edu.degree}</li>
-                            <li>{edu.fromYear}</li>
-                            <li>{edu.toYear}</li>
-                            <li>{edu.association}</li>
-                        </ul>
-                    </div>
-                );
-            });
             const certificate = jsonsData[2].certificate;
-            const showCerti = certificate.map((certi,i)=>{
-                return(
-                    <div>
-                        <ul key={i}>
-                            <li>{certi.certificate}</li>
-                            <li>{certi.fromDate}</li>
-                            <li>{certi.toDate}</li>
-                            <li>{certi.association}</li>
-                        </ul>
-                    </div>
-                );
-            });
             const workingExperience = jsonsData[3].workingExperience;
             const showWorkExp = workingExperience.map((workExp)=>{
                 return(
@@ -74,7 +51,7 @@ class DataList extends React.Component{
             <>
             <Layout>                
                 <Row>
-                    <Col xl={4} className='alllogobg'>
+                    <Col lg={2} xl={4} className='alllogobg'>
                         <div className='mainimg'>                            
                             <p><img src="images/123.png" className='img' alt="microsoftlogo" /></p>
                             <p><img src="images/excel.png" className='img' alt="excellogo" /></p>
@@ -84,12 +61,12 @@ class DataList extends React.Component{
                     </Col>                
                     <Col lg={4} xl={6} className='colsix'>
                         <div className='bgcolsix'>
-                            <h3 className='titlefont'>Education</h3>
-                            {eduDetail}
+                            <h3 className='titlefont'>Education</h3>                            
+                            <DList edu={education}/>
                         </div>
                         <div className='bgcolsix'>
                             <h3 className='titlefont'>Certificate</h3>
-                            {showCerti}
+                            <DList edu={certificate} />
                         </div>
                         <div className='bgcolsix'>
                             <h3 className='hptitle'>Hobby</h3>

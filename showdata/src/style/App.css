@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 .layoutheader{
     margin-top:2rem;
@@ -53,7 +52,7 @@ p{
 }
 .coliconlist{
     background-color: #fff;
-    padding-right: 2rem;
+    padding-left: 9rem;
     padding-top: 2rem;
     width: 100%;
 }
@@ -102,19 +101,19 @@ p{
     box-shadow: 0px 0px red, -1em 0 .4em olive;
 }
 .img{
-    width: 70px;
+    width: 52%;
 }
 .mainimg{
     padding-top: 3rem;
-    padding-left: 4rem;
+    padding-left: 4.5rem;
 }
 .rightimg{
-    width: 60px;
+    width: 30%;
     margin-left: 5rem;
-    
+    /* background-color: red; */
 }
 .rightimgplant{
-    width: 250px;
+    width: 150%;
 }
 .mainrightplant{
     background-image: url('images/bgpen.png');

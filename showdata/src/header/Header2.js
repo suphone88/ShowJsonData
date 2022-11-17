@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { fetchshows } from '../actions';
 import { Layout, Col, Row, Divider, List } from 'antd';
-//import {HomeOutlined, MediumOutlined,GoogleOutlined} from '@ant-design/icons';
+import {PhoneOutlined, MailOutlined, HomeOutlined} from '@ant-design/icons';
 
 class Header2 extends React.Component {
     componentDidMount(){
@@ -15,9 +15,8 @@ class Header2 extends React.Component {
         }else{
             const personalInfo = jsonsData[0].personalInfo;  
             //const showPersonalHeader = personalInfo[0].resumeObjective;
-            const perDetail = personalInfo[1]; 
-            //console.log(perDetail);            
-            const data = Object.values(perDetail);
+            const perDetail = personalInfo[2];                  
+            //const data = Object.values(perDetail);
             const showPersonalName= <div>
             {personalInfo[1].name}
             </div>    
@@ -26,7 +25,7 @@ class Header2 extends React.Component {
                 <>
                 <Layout>
                 <Row>
-                    <Col span={24} className='col24'>  </Col>
+                    <Col span={24} className='col24'></Col>
                 </Row>
                 <Row>                                 
                     <Col md={2} lg={4} className='bgper'></Col>
@@ -34,19 +33,33 @@ class Header2 extends React.Component {
                         <div className='bgname'>
                             <h2>{showPersonalName}</h2>
                         </div>
-                    </Col>
-                    
+                    </Col>                    
                     <Col lg={6} xl={8} className='coliconlist'>
                         <div>
-                        {/* {console.log("Data is ", data)} */}
+                        {/* {console.log("Data is ", [perDetail])} */}
                         <List
-                            dataSource={data}
-                            renderItem={item =>
-                            <List.Item className='iconlist'>                                
-                                {item}
-                                {/* {console.log("Item is ",item)} */}
-                                </List.Item>                               
-                                }
+                            dataSource={[perDetail]}
+                            locale
+                            renderItem={(item,i) =>
+                            <List.Item
+                            description
+                            >
+                            <List.Item.Meta
+                            description={item.phoneNo} 
+                            avatar={<PhoneOutlined/>}
+                            
+                            />                                
+                            <List.Item.Meta
+                            description={item.email}
+                            avatar={<MailOutlined/>}
+                            />                                
+                            
+                            <List.Item.Meta 
+                            avatar={<HomeOutlined/>}
+                            description={item.nationality}
+                            />      {}                         
+                            </List.Item>                               
+                            }
                         />
                         </div>
                     </Col>
@@ -61,7 +74,6 @@ class Header2 extends React.Component {
                 </Row>
                 </Layout>
                 </>
-                
             );
         }
     }
