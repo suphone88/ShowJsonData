@@ -72,19 +72,26 @@ p{
     background-color: #fff;
     padding: 2rem;
     width: 100%;
+    
 }
 .project{
     padding-bottom:2em;
 }
 .workexp{
-    padding-bottom: 2rem;
+    background-color: #fff;
 }
 .mainworkexp{
-    padding: 2rem;
+    
     padding-right: 3rem;
 }
 .colsix{
-    background-color: #fff;    
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) -20px 5px 20px -20px; 
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px; */
+    /* box-shadow: rgba(0, 0, 0, 0.6) 0px 24px 28px, rgba(0, 0, 0, 0.22) 0px 0px 0px; */
 }
 .colsixborder{
     background-color: #fff;
@@ -116,9 +123,22 @@ p{
     width: 150%;
 }
 .mainrightplant{
-    background-image: url('images/bgpen.png');
-    padding-bottom: 10px;
+        /* padding: 10px; */
+    background-color: #ddd;
+    width: 100%;
+    /* position: relative; */
+    z-index: 0;
+    margin-top: -1rem;
+   
 }
 .alllogobg{
     background-color: #ddd;
+    width: 100%;
+}
+.boxcol{
+    background-color: red;
+
+}
+.rightplantimg{
+    width: 50%;
 }
