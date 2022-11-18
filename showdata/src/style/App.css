@@ -2,49 +2,26 @@ body{
     margin: 0;
     padding: 0;    
 }
-.layoutheader{
-    margin-top:2rem;
-    padding-top:2rem;
-}
-.header-name{
-    padding-top:2rem;
-}
-.titlefont,.h3{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:15%;
-}
-.worktitle,.h3{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:17.5%;
-}
-.hptitle{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:10%;
-}
-.col2{
-    border-left:2px solid #ddd;
-    background-color: #fff;
-}
 p{
     text-align: justify;
 }
-.col24{
-    /* background-color: #f0f2f5; */
+.ant-list-split .ant-list-item {
+    border-bottom: 0px solid #f0f0f0;
+}
+.firstcol24{
     background-color: #ddd;
+    width: 100%;
     padding: 1rem;
 }
 .bgper{
     background-color: #ddd;
+    width: 100%;
 }
 .bgcol{
     background-color: #fff;
     width: 100%;
 }
-.bgname{
-    /* background-color: red; */
+.bgname{    
     border-left: 12px solid #faad14;
     margin-top: 2rem;
     padding-left: 1rem;
@@ -61,84 +38,72 @@ p{
     padding:0.2rem 0rem;
     justify-content:right;
 }
-.ant-list-split .ant-list-item {
-    border-bottom: 0px solid #f0f0f0;
+.bgdivider{
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
 }
 .divider{
     line-height:0px;
     text-transform:uppercase;
 }
-.bgdivider{
-    background-color: #fff;
-    padding: 2rem;
-    width: 100%;
-    
-}
-.project{
-    padding-bottom:2em;
-}
-.workexp{
-    background-color: #fff;
-}
-.mainworkexp{
-    
-    padding-right: 3rem;
-}
-.colsix{
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.45) -20px 5px 20px -20px; 
-    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px; */
-    /* box-shadow: rgba(0, 0, 0, 0.6) 0px 24px 28px, rgba(0, 0, 0, 0.22) 0px 0px 0px; */
-}
-.colsixborder{
-    background-color: #fff;
-    
-}
-.bgcolsix{
-    padding: 2rem;
-}
-.bgheader{
-    border: 1px solid red;
-    background-color: #fff;
-}
-.boxsh {
-    box-shadow: 0px 0px red, -1em 0 .4em olive;
-}
-.img{
-    width: 52%;
-}
-.mainimg{
-    padding-top: 3rem;
-    padding-left: 4.5rem;
-}
-.rightimg{
-    width: 30%;
-    margin-left: 5rem;
-    /* background-color: red; */
-}
-.rightimgplant{
-    width: 150%;
-}
-.mainrightplant{
-        /* padding: 10px; */
-    background-color: #ddd;
-    width: 100%;
-    /* position: relative; */
-    z-index: 0;
-    margin-top: -1rem;
-   
+.ant-divider-horizontal.ant-divider-with-text:after, .ant-divider-horizontal.ant-divider-with-text:before {    
+    border-top: 4px solid transparent;
+    border-top-color: inherit;
 }
 .alllogobg{
     background-color: #ddd;
     width: 100%;
 }
-.boxcol{
-    background-color: red;
-
+.logoimg{    
+    padding-top: 4rem;
+    padding-left: 6rem;
 }
-.rightplantimg{
-    width: 50%;
+.img{
+    width: 40%;  
+}
+.colsix{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) -30px 20px 23px -20px; 
+}
+.bgcolsix{
+    padding: 2rem;
+}
+.titlefont,.h3{
+    text-transform: uppercase;
+    border-bottom:3px solid #faad14;                          
+    width:15%;
+}
+.hptitle{
+    text-transform: uppercase;
+    border-bottom:3px solid #faad14;                          
+    width:10%;
+}
+.col2{
+    border-left:2px solid #ddd;
+    background-color: #fff;
+}
+.workexp{
+    background-color: #fff;
+}
+.mainworkexp{    
+    padding-right: 3rem;
+    padding-top: 2rem;
+}
+.worktitle,.h3{
+    text-transform: uppercase;
+    border-bottom:3px solid #faad14;                          
+    width:17.5%;
+}
+.rightimg{
+    width: 25%;
+    margin-left: 7rem;
+    padding-top: 4rem;
+    /* background-color: red; */
+}
+.rightimgplant{
+    width: 40%;
+}
+.mainrightplant{
+    padding-top: 24rem;
 }

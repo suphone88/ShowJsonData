@@ -3,7 +3,7 @@ import ShowJsondata from './ShowJsondata';
 
 const App = () => {
     return(
-        <div className="ui container"> <ShowJsondata /> </div>
+        <div> <ShowJsondata /> </div>
     );
 };
 

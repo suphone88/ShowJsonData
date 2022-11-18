@@ -25,16 +25,17 @@ class Header2 extends React.Component {
                 <>
                 <Layout>
                 <Row>
-                    <Col span={24} className='col24'></Col>
+                    <Col xl={24} className='firstcol24'></Col>
                 </Row>
-                <Row>                                 
-                    <Col md={2} lg={4} className='bgper'></Col>
-                    <Col xl={8} className='bgcol'>
+                
+                <Row>                                                     
+                    <Col lg={2} xl={4} className='bgper'></Col>
+                    <Col lg={8} xl={10} className='bgcol'>
                         <div className='bgname'>
                             <h2>{showPersonalName}</h2>
                         </div>
                     </Col>                    
-                    <Col lg={6} xl={8} className='coliconlist'>
+                    <Col lg={4} xl={6} className='coliconlist'>
                         <div>
                         {/* {console.log("Data is ", [perDetail])} */}
                         <List
@@ -47,30 +48,28 @@ class Header2 extends React.Component {
                             <List.Item.Meta
                             description={item.phoneNo} 
                             avatar={<PhoneOutlined/>}
-                            
                             />                                
                             <List.Item.Meta
                             description={item.email}
                             avatar={<MailOutlined/>}
-                            />                                
-                            
-                            <List.Item.Meta 
-                            avatar={<HomeOutlined/>}
+                            />
+                            <List.Item.Meta
                             description={item.nationality}
+                            avatar={<HomeOutlined/>}
                             />      {}                         
                             </List.Item>                               
                             }
                         />
                         </div>
                     </Col>
-                    <Col md={2} lg={4} className='bgper'></Col>
+                    <Col lg={2} xl={4} className='bgper'></Col>
                 </Row>
                 <Row>
-                    <Col xl={4} className='bgper'></Col>
+                    <Col lg={2} xl={4} className='bgper'></Col>
                     <Col lg={14} xl={16} className='bgdivider'>
                         <Divider className='divider'>Web Developer</Divider>
                     </Col>                    
-                    <Col xl={4} className='bgper'></Col>            
+                    <Col lg={2} xl={4} className='bgper'></Col>            
                 </Row>
                 </Layout>
                 </>

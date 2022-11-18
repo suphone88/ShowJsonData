@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { fetchshows } from '../actions';
 import { Layout, Col, Row, List } from 'antd';
 import DList from './DList';
-const { Sider, Content } = Layout;
-
 
 class DataList extends React.Component{
     componentDidMount(){
@@ -53,64 +51,52 @@ class DataList extends React.Component{
             <Layout>        
                 <Row>
                     <Col lg={2} xl={4} className='alllogobg'>
-                        <div className='mainimg'>                            
+                        <div className='logoimg'>                            
                             <p><img src="images/123.png" className='img' alt="microsoftlogo" /></p>
                             <p><img src="images/excel.png" className='img' alt="excellogo" /></p>
                             <p><img src="images/pdfimg.png" className="img" alt="pdflogo" /></p>
                             <p><img src="images/pwimg.png" className="img" alt="powerpointlogo" /></p>
                         </div>
                     </Col>
-                   
-                        <Col lg={4} xl={6} className='colsix'>
-                            <div className='bgcolsix'>
-                                <h3 className='titlefont'>Education</h3>                            
-                                <DList edu={education}/>
-                            </div>
-                            <div className='bgcolsix'>
-                                <h3 className='titlefont'>Certificate</h3>
-                                <DList edu={certificate} />
-                            </div>
-                            <div className='bgcolsix'>
-                                <h3 className='hptitle'>Hobby</h3>
-                                {hobbies}
-                            </div>
-                        </Col>
-                        <Col span={2} className='col2'></Col>
-                        <Col lg={6} xl={8} className='workexp'>
-                            <div className='mainworkexp'>
-                                <h3 className='worktitle'>WorkExperience</h3>
-                                <List      
-                                dataSource={showWorkExp}
-                                renderItem={item => <List.Item>{item}</List.Item>}
-                                />
-                            </div>
-                            <div className='mainworkexp'>
-                            <h3 className='hptitle'>Project</h3>
-                                <List     
-                                dataSource={showProj}
-                                renderItem={item => <List.Item>{item}</List.Item>}
-                                />
-                            </div>
-                        </Col>
-                    
-                    
+                    <Col lg={4} xl={6} className='colsix'>
+                        <div className='bgcolsix'>
+                            <h3 className='titlefont'>Education</h3>                            
+                            <DList edu={education}/>
+                        </div>
+                        <div className='bgcolsix'>
+                            <h3 className='titlefont'>Certificate</h3>
+                            <DList edu={certificate} />
+                        </div>
+                        <div className='bgcolsix'>
+                            <h3 className='hptitle'>Hobby</h3>
+                            {hobbies}
+                        </div>
+                    </Col>
+                    <Col span={2} className='col2'></Col>
+                    <Col lg={6} xl={8} className='workexp'>
+                        <div className='mainworkexp'>
+                            <h3 className='worktitle'>WorkExperience</h3>
+                            <List      
+                            dataSource={showWorkExp}
+                            renderItem={item => <List.Item>{item}</List.Item>}
+                            />
+                        </div>
+                        <div className='mainworkexp'>
+                        <h3 className='hptitle'>Project</h3>
+                            <List     
+                            dataSource={showProj}
+                            renderItem={item => <List.Item>{item}</List.Item>}
+                            />
+                        </div>
+                    </Col>
                     <Col xl={4} className='alllogobg'>
-                        <div className=''>
+                        <div>
                             <p><img src="images/bgpen.png" className="rightimg" alt="Pen" /></p>
                         </div>
-                        <div></div>
-                        <div>
-                        
+                        <div className='mainrightplant'>
+                            <p><img src="images/a1.png" alt="plants" /></p>
                         </div>
                     </Col>
-                </Row>
-                <Row>
-                    <Col lg={2} xl={4} className='alllogobg'></Col>
-                    <Col lg={14} xl={16} className='colsix'></Col>
-                    <Col md={4} className='mainrightplant'>
-                        <p><img src="images/00.jpg" className='rightplantimg' alt="plants" /></p>
-                    </Col>
-                    
                 </Row>
             </Layout>
             </>
