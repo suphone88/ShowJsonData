@@ -7,7 +7,9 @@
               "resumeObjective":"Write Something"
            },
            {
-              "name":"Su Phone Myint",             
+            "name":"Su Phone Myint"
+           },
+           {             
               "nationality":"Myanmar",             
               "phoneNo":"09447159583",
               "email":"suphonemyint.la@gmail.com"
