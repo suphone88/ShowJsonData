@@ -1,8 +1,6 @@
 import _ from "lodash";
 import { FETCH_SHOW } from "../actions/types";
 
-//export default () => console.log("Hello World.");
-
 export const jsonsReducer = (state = {}, action) => {
   //console.log('1.action>>>',action)
   //console.log('1.state>>>>',state)

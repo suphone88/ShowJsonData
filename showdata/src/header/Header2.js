@@ -18,14 +18,12 @@ class Header2 extends React.Component {
       const perDetail = personalInfo[2];
       //const data = Object.values(perDetail);
       const showPersonalName = <div>{personalInfo[1].name}</div>;
-
       return (
         <>
           <Layout>
             <Row>
               <Col xl={24} className="firstcol24"></Col>
             </Row>
-
             <Row>
               <Col lg={2} xl={4} className="bgper"></Col>
               <Col lg={8} xl={10} className="bgcol">

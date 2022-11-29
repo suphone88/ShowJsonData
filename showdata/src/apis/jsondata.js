@@ -1,5 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
+import Constants from "../common/Constants";
 
 export default axios.create({
-    baseURL:'http://localhost:3001'
+  baseURL: Constants.BASE_URL,
 });

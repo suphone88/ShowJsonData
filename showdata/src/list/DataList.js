@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { fetchshows } from "../actions";
 import { Layout, Col, Row, List } from "antd";
 import DList from "./DList";
+import LeftImage from "../images/LeftImage";
+import RightImage from "../images/RightImage";
 
 class DataList extends React.Component {
   componentDidMount() {
@@ -53,36 +55,7 @@ class DataList extends React.Component {
           <Layout>
             <Row>
               <Col lg={2} xl={4} className="alllogobg">
-                <div className="logoimg">
-                  <p>
-                    <img
-                      src="images/123.png"
-                      className="img"
-                      alt="microsoftlogo"
-                    />
-                  </p>
-                  <p>
-                    <img
-                      src="images/excel.png"
-                      className="img"
-                      alt="excellogo"
-                    />
-                  </p>
-                  <p>
-                    <img
-                      src="images/pdfimg.png"
-                      className="img"
-                      alt="pdflogo"
-                    />
-                  </p>
-                  <p>
-                    <img
-                      src="images/pwimg.png"
-                      className="img"
-                      alt="powerpointlogo"
-                    />
-                  </p>
-                </div>
+                <LeftImage />
               </Col>
               <Col lg={4} xl={6} className="colsix">
                 <div className="bgcolsix">
@@ -98,8 +71,7 @@ class DataList extends React.Component {
                   {hobbies}
                 </div>
               </Col>
-              <Col span={2} className="col2"></Col>
-              <Col lg={6} xl={8} className="workexp">
+              <Col lg={8} xl={10} className="workexp">
                 <div className="mainworkexp">
                   <h3 className="worktitle">WorkExperience</h3>
                   <List
@@ -116,20 +88,7 @@ class DataList extends React.Component {
                 </div>
               </Col>
               <Col xl={4} className="alllogobg">
-                <div>
-                  <p>
-                    <img
-                      src="images/bgpen.png"
-                      className="rightimg"
-                      alt="Pen"
-                    />
-                  </p>
-                </div>
-                <div className="mainrightplant">
-                  <p>
-                    <img src="images/a1.png" alt="plants" />
-                  </p>
-                </div>
+                <RightImage />
               </Col>
             </Row>
           </Layout>
