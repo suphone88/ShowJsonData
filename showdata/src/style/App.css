@@ -1,109 +1,112 @@
-body{
-    margin: 0;
-    padding: 0;    
+body {
+  margin: 0;
+  padding: 0;
 }
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 .ant-list-split .ant-list-item {
-    border-bottom: 0px solid #f0f0f0;
+  border-bottom: 0px solid #f0f0f0;
 }
-.firstcol24{
-    background-color: #ddd;
-    width: 100%;
-    padding: 1rem;
+.firstcol24 {
+  background-color: #ddd;
+  width: 100%;
+  padding: 1rem;
 }
-.bgper{
-    background-color: #ddd;
-    width: 100%;
+.bgper {
+  background-color: #ddd;
+  width: 100%;
 }
-.bgcol{
-    background-color: #fff;
-    width: 100%;
+.bgcol {
+  background-color: #fff;
+  width: 100%;
 }
-.bgname{    
-    border-left: 12px solid #faad14;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    text-transform: uppercase;
+.bgname {
+  border-left: 12px solid #faad14;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
 }
-.coliconlist{
-    background-color: #fff;
-    padding-left: 9rem;
-    padding-top: 2rem;
-    width: 100%;
+.coliconlist {
+  background-color: #fff;
+  padding-left: 9rem;
+  padding-top: 2rem;
+  width: 100%;
 }
-.iconlist{
-    border-bottom:0px;
-    padding:0.2rem 0rem;
-    justify-content:right;
+.iconlist {
+  border-bottom: 0px;
+  padding: 0.2rem 0rem;
+  justify-content: right;
 }
-.bgdivider{
-    background-color: #fff;
-    padding: 2rem;
-    width: 100%;
+.bgdivider {
+  background-color: #fff;
+  padding: 2rem;
+  width: 100%;
 }
-.divider{
-    line-height:0px;
-    text-transform:uppercase;
+.divider {
+  line-height: 0px;
+  text-transform: uppercase;
 }
-.ant-divider-horizontal.ant-divider-with-text:after, .ant-divider-horizontal.ant-divider-with-text:before {    
-    border-top: 4px solid transparent;
-    border-top-color: inherit;
+.ant-divider-horizontal.ant-divider-with-text:after,
+.ant-divider-horizontal.ant-divider-with-text:before {
+  border-top: 4px solid transparent;
+  border-top-color: inherit;
 }
-.alllogobg{
-    background-color: #ddd;
-    width: 100%;
+.alllogobg {
+  background-color: #ddd;
+  width: 100%;
 }
-.logoimg{    
-    padding-top: 4rem;
-    padding-left: 6rem;
+.logoimg {
+  padding-top: 4rem;
+  padding-left: 6rem;
 }
-.img{
-    width: 40%;  
+.img {
+  width: 40%;
 }
-.colsix{
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.45) -30px 20px 23px -20px; 
+.colsix {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) -30px 20px 23px -20px;
 }
-.bgcolsix{
-    padding: 2rem;
+.bgcolsix {
+  padding: 2rem;
 }
-.titlefont,.h3{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:15%;
+.titlefont,
+.h3 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #faad14;
+  width: 15%;
 }
-.hptitle{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:10%;
+.hptitle {
+  text-transform: uppercase;
+  border-bottom: 3px solid #faad14;
+  width: 10%;
 }
-.col2{
-    border-left:2px solid #ddd;
-    background-color: #fff;
+.col2 {
+  border-left: 2px solid #ddd;
+  background-color: #fff;
 }
-.workexp{
-    background-color: #fff;
+.workexp {
+  background-color: #fff;
 }
-.mainworkexp{    
-    padding-right: 3rem;
-    padding-top: 2rem;
+.mainworkexp {
+  padding-right: 3rem;
+  padding-top: 2rem;
 }
-.worktitle,.h3{
-    text-transform: uppercase;
-    border-bottom:3px solid #faad14;                          
-    width:17.5%;
+.worktitle,
+.h3 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #faad14;
+  width: 17.5%;
 }
-.rightimg{
-    width: 25%;
-    margin-left: 7rem;
-    padding-top: 4rem;
-    /* background-color: red; */
+.rightimg {
+  width: 25%;
+  margin-left: 7rem;
+  padding-top: 4rem;
+  /* background-color: red; */
 }
-.rightimgplant{
-    width: 40%;
+.rightimgplant {
+  width: 40%;
 }
-.mainrightplant{
-    padding-top: 24rem;
+.mainrightplant {
+  padding-top: 35rem;
 }
