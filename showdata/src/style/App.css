@@ -2,8 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.mainf {
-  background-color: green;
+.mainspan16 {
+  margin-top: 2rem;
+  background-color: #fff;
+  /* box-shadow: rgba(0, 0, 0, 0.45) -30px 20px 23px -20px; */
+  -webkit-box-shadow: -22px 11px 35px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -22px 11px 35px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -22px 11px 35px 1px rgba(0, 0, 0, 0.5);
 }
 p {
   text-align: justify;
@@ -33,7 +38,7 @@ p {
 }
 .coliconlist {
   background-color: #fff;
-  padding-left: 9rem;
+  padding-left: 6rem;
   padding-top: 2rem;
   width: 100%;
 }
@@ -61,7 +66,7 @@ p {
   width: 100%;
 }
 .logoimg {
-  padding-top: 4rem;
+  padding-top: 20rem;
   padding-left: 6rem;
 }
 .img {
@@ -70,7 +75,6 @@ p {
 .colsix {
   background-color: #fff;
   border-top: 0px;
-  box-shadow: rgba(0, 0, 0, 0.45) -30px 20px 23px -20px;
 }
 .bgcolsix {
   padding: 2rem;
@@ -108,14 +112,14 @@ p {
 .rightimg {
   width: 25%;
   margin-left: 7rem;
-  padding-top: 4rem;
+  padding-top: 19rem;
   /* background-color: red; */
 }
 .rightimgplant {
   width: 40%;
 }
 .mainrightplant {
-  padding-top: 28rem;
+  padding-top: 25rem;
 }
 h1 {
   text-align: center;

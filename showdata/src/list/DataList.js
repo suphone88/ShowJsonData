@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import { fetchshows } from "../actions";
 import { Layout, Col, Row, List } from "antd";
 import DList from "./DList";
-import LeftImage from "../images/LeftImage";
-import RightImage from "../images/RightImage";
 
 class DataList extends React.Component {
   componentDidMount() {
@@ -54,10 +52,7 @@ class DataList extends React.Component {
         <>
           <Layout>
             <Row>
-              <Col lg={2} xl={4} className="alllogobg">
-                <LeftImage />
-              </Col>
-              <Col lg={4} xl={6} className="colsix">
+              <Col lg={8} xl={10} className="colsix">
                 <div className="bgcolsix">
                   <h3 className="titlefont">Education</h3>
                   <DList edu={education} />
@@ -71,7 +66,7 @@ class DataList extends React.Component {
                   {hobbies}
                 </div>
               </Col>
-              <Col lg={8} xl={10} className="workexp">
+              <Col lg={12} xl={14} className="workexp">
                 <div className="mainworkexp">
                   <h3 className="worktitle">WorkExperience</h3>
                   <List
@@ -86,9 +81,6 @@ class DataList extends React.Component {
                     renderItem={(item) => <List.Item>{item}</List.Item>}
                   />
                 </div>
-              </Col>
-              <Col xl={4} className="alllogobg">
-                <RightImage />
               </Col>
             </Row>
           </Layout>
