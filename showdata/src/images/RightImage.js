@@ -1,16 +1,17 @@
 import React from "react";
+import IMG from "../common/IMG";
 
 const RightImage = () => {
   return (
     <>
       <div>
         <p>
-          <img src="images/bgpen.png" className="rightimg" alt="Pen" />
+          <IMG src="images/bgpen.png" className="rightimg" alt="Pen" />
         </p>
       </div>
       <div className="mainrightplant">
         <p>
-          <img src="images/a1.png" alt="plants" />
+          <IMG src="images/a1.png" alt="plants" />
         </p>
       </div>
     </>
