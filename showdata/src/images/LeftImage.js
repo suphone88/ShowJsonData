@@ -1,12 +1,11 @@
 import React from "react";
+import IMG from "../common/IMG";
 
 const LeftImage = () => {
   return (
     <>
       <div className="logoimg">
-        <p>
-          <img src="images/123.png" className="img" alt="microsoftlogo" />
-        </p>
+        <IMG src="images/123.png" className="img" alt="microsoftlogo"/>
         <p>
           <img src="images/excel.png" className="img" alt="excellogo" />
         </p>
