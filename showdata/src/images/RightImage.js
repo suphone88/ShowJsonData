@@ -4,15 +4,9 @@ import IMG from "../common/IMG";
 const RightImage = () => {
   return (
     <>
-      <div>
-        <p>
           <IMG src="images/bgpen.png" className="rightimg" alt="Pen" />
-        </p>
-      </div>
-      <div className="mainrightplant">
-        <p>
+      <div className="mainrightplant">  
           <IMG src="images/a1.png" alt="plants" />
-        </p>
       </div>
     </>
   );
