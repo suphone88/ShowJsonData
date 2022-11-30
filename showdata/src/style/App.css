@@ -71,6 +71,7 @@ p {
 }
 .img {
   width: 40%;
+  padding-bottom: 1rem;
 }
 .colsix {
   background-color: #fff;
